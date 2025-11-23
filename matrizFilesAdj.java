@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 public class matrizFilesAdj {
 
     // Lee la matriz desde el archivo
-    public double[][] fileToMatrix(String fileName){
+    public double[][] fileToMatriz(String fileName){
         double[][] matriz = null;
         try{
             File file = new File("C:\\archivos\\" + fileName);
@@ -41,8 +41,8 @@ public class matrizFilesAdj {
         }
         return matriz;
     }
-    // Escribir matriz en archivo
-    public void writeMatrixToFile(String fileName, double[][] matriz){
+    // Escribir matriz en un nuevo archivo
+    public void writeMatrizToFile(String fileName, double[][] matriz){
         try{
             FileWriter file = new FileWriter("C:\\archivos\\" + fileName);
             PrintWriter writer = new PrintWriter(file);
